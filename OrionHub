@@ -1,0 +1,30 @@
+if game.PlaceId == 13985151437 then
+    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+    local Window = OrionLib:MakeWindow({Name = "SafeHub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+    --Values
+    _G.autoTp = true
+
+
+    --Functions
+    function autoTp()
+        while _G.autoTp == true do
+
+    --Tabs
+    local FarmTab = Window:MakeTab({
+    Name = "AutoFarm",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+    Name = "Autofarm"
+})
+--Toggles
+FarmTab:AddToggle({
+    Name = "Work Farm",
+    Default = false,
+    Callback = function(Value)
+        print(Value)
+    end
+})
