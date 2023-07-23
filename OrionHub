@@ -1,5 +1,4 @@
-if game.PlaceId == 13985151437 then
-    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
     local Window = OrionLib:MakeWindow({Name = "SafeHub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
     --Values
